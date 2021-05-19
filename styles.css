@@ -16,6 +16,7 @@ body {
     background-color: #e4a0b5;
     background-color: #f7b3c8;
     background-image: linear-gradient(to bottom, #f7b3c8, #fdcbd6);
+    background-image: linear-gradient(to bottom, #fdcbd6, #f7b3c8);
     color: #ffdcc8;
 
     color: #8a7162;
@@ -91,7 +92,11 @@ p:last-child { padding-bottom: 0 }
     /*font-weight: 600;*/
     /*margin-top: 40px*/
 }
-.author-img { width: 360px; }
+.author-img {
+    width: 360px;
+    display: block;
+    margin: auto;
+}
 .mag-separator { width: 60px; margin: 10px 0 30px; }
 .lyrics {
     color: #ce9aaa;
@@ -99,4 +104,35 @@ p:last-child { padding-bottom: 0 }
     color: #98707d;
     color: #5e5171;
     margin-top: 40px;
+}
+
+.chanya {
+    width: 180px;
+    display: block;
+    margin: 20px auto 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .body-wrapper {
+        padding: 40px 0;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 26px;
+        width: 85%;
+    }
+    .author {
+        font-size: 24px;
+        margin-bottom: 24px;
+        margin-top: 5px;
+    }
+    .chanya {
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .author-img { width: 100%; }
 }
