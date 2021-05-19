@@ -6,6 +6,7 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -134,13 +135,19 @@ p:last-child { padding-bottom: 0 }
         margin-bottom: 18px;
         margin-top: 5px;
     }
-    .chanya {
-        width: 100px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .diary-avatar {
+        width: 90px;
+        margin: 15px 0 25px;
         border-radius: 10px;
+        /*border: 2px solid #af9f95;*/
+        /*border: 2px solid #c1aa7f;*/
+        /*border: 2px solid #cca5ad;*/
     }
-    .author-img {
-        width: 100%;
+    .magnolia-img {
+        width: 85%;
+        border-left: 25px solid #f9eddf;
+        border-right: 25px solid #f9eddf;
+        border-left: 24px solid #ece8e3;
+        border-right: 24px solid #ece8e3;
     }
 }
