@@ -50,6 +50,14 @@ body {
     width: auto;
     margin: 0 auto;
     padding: 60px 0;
+
+    background-color: rgb(230 228 226 / 46%);
+    /* background-color: rgb(162 154 146 / 46%); */
+    /* background-color: rgb(222 219 216 / 46%); */
+rgb(162 154 146 / 46%): ;
+    /* background-color: rgb(76 82 88 / 10%); */
+    background-color: rgb(230 228 226);
+    background-color: rgb(245 240 235);
 }
 
 h1 {
@@ -75,9 +83,10 @@ h2 {
     font-weight: 600;
 }
 p {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 8px;
-    line-height: 1.5;
+    line-height: 1.25;
+    color: #8c7c81;
 }
 p:last-child { padding-bottom: 0 }
 .author {
@@ -121,33 +130,80 @@ p:last-child { padding-bottom: 0 }
 
 @media only screen and (max-width: 600px) {
     .body-wrapper {
-        padding: 40px 0;
+        margin: 20px auto;
+        padding: 35px 20px;
+        width: 90%;
+    }
+    .section-header {
+        margin-bottom: 20px;
     }
     h1 {
-        font-size: 42px;
+        font-size: 38px;
     }
     h2 {
-        font-size: 24px;
-        width: 88%;
+        font-size: 22px;
+        width: 100%;
+    }
+    h4 {
+        font-size: 19px;
+        margin-bottom: 10px;
+        color: #b5a8a6;
+        color: #85635d;
+        text-align: left;
+        font-weight: 600;
     }
     .author {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 18px;
         margin-top: 5px;
     }
     .diary-avatar {
-        width: 90px;
-        margin: 15px 0 25px;
+        width: 80px;
+        margin: 20px 0 10px;
         border-radius: 10px;
         /*border: 2px solid #af9f95;*/
         /*border: 2px solid #c1aa7f;*/
         /*border: 2px solid #cca5ad;*/
     }
     .magnolia-img {
-        width: 85%;
+        width: 90%;
         border-left: 25px solid #f9eddf;
         border-right: 25px solid #f9eddf;
         border-left: 24px solid #ece8e3;
         border-right: 24px solid #ece8e3;
+
+        border-left: 24px solid #fff;
+        border-right: 24px solid #fff;
+        border-left: 24px solid #e0ddd9;
+        border-right: 24px solid #e0ddd9;
+        border-left: 24px solid #d6d2ce;
+        border-right: 24px solid #d6d2ce;
+    }
+    .img-credit {
+        font-size: 16px;
+        line-height: 1.1;
+        padding-top: 10px;
+        color: rgb(140 124 129 / 60%);
+        width: 90%;
+        text-align: right;
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    .section-project {
+        margin: 20px 0;
+    }
+    .project-list {
+        text-align: left;
+    }
+    .project-list li {
+        list-style-type: none;
+    }
+    .project-list li a {
+        text-decoration: underline;
+        color: #411f7d;
+    }
+    .project-list li a:hover {
+        text-decoration: none;
+        color: blue;
     }
 }
